@@ -1,0 +1,95 @@
+.headerContainer{
+    max-width: 1600px;
+    height: 800px;
+    background-image: url("/src/components/images/mainPhoto.jpg");
+    margin: 0 auto;
+}
+.headerContainerChild{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerUl{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.headerUl >li{
+    color: #363636;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+.imgLogo{
+    position: relative;
+    width: 90px;
+    height: 100px;
+    top: 35px;
+
+    
+}
+.titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-family: Impact;
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 93px;
+    letter-spacing: 0.02em;
+    
+}
+hr{
+    width: 386px;
+    border: 0.8px solid black;
+}
+.grandFinalTime{
+    font-family: Impact;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.time{
+    color: #9F6B08;
+    font-family: Impact;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+@media screen and (max-width: 930px) {
+.headerContainer{
+    background-size: cover;
+    height: 450px;
+    background-repeat: no-repeat;
+}
+}
+@media screen and (max-width: 523px) {
+h1{
+    font-size: 35px;
+}
+.headerContainerChild{
+    flex-wrap: wrap;
+}
+.imgLogo{
+    top: 10px;
+}
+hr{
+    width: 100%;
+}
+}
+@media screen and (max-width: 390px) {
+    .headerContainer{
+        height: 550px;
+    }
+}

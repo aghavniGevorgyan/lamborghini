@@ -1,0 +1,164 @@
+.trofeoContainer {
+  max-width: 1600px;
+  height: 1400px;
+  margin: 0 auto;
+}
+
+.TrofeoFirstPart {
+  max-width: 1600px;
+  background: #363636;
+  height: 871px;
+}
+
+.trofeoTitle {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.trofeoParagraph {
+  max-width: 440px;
+  height: 270px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.firstPartDiv {
+  padding-top: 40px;
+  max-width: 910px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.secondPartDiv {
+  max-width: 1600px;
+  height: 425px;
+  background: white;
+}
+.polygonsDiv {
+  height: 640px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  top: 140px;
+}
+.pol1 {
+  width: 210px;
+  height: 210px;
+  background: url("./Polygon1.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -100px;
+  left: 125px;
+}
+.pol2 {
+  width: 560px;
+  height: 560px;
+  background: url("./Polygon2.svg");
+  background-repeat: no-repeat;
+}
+.auto {
+  width: 725px;
+  height: 214px;
+  background: url("./auto.png");
+  background-repeat: no-repeat;
+  position: relative;
+  left: -400px;
+  top: 130px;
+}
+.aboutAuto {
+  max-width: 890px;
+  height: 35px;
+  display: flex;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+  top: -100px;
+}
+.secondDivText {
+  max-width: 590px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 100px;
+}
+.first {
+  width: 285px;
+  height: 102px;
+}
+.second {
+  width: 437px;
+  height: 100px;
+}
+.third {
+  width: 590px;
+  height: 51px;
+}
+.secondDivChild {
+  max-width: 895px;
+  margin: 0 auto;
+}
+.autoPoly1 {
+  width: 274px;
+  height: 246px;
+  background: url("./autoPoly1.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -480px;
+  left: 370px;
+}
+.autoPoly2 {
+  width: 324px;
+  height: 297px;
+  background: url("./autoPoly2.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -540px;
+  left: 560px;
+}
+
+@media screen and (max-width: 930px) {
+  .auto,.autoPoly1,.autoPoly2,.aboutAuto{
+      display: none;
+  }
+
+  .firstPartDiv{
+    flex-wrap: wrap;
+  }
+  .third{
+    width: 100%;
+    height: 75px;
+  }
+  .second{
+    width: 100%;
+    height: 75px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .pol2{
+    display: none;
+  }
+  .third{
+
+    height: 90px;
+  }
+  .second{
+
+    height: 120px;
+  }
+}

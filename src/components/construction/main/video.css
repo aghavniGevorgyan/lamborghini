@@ -1,0 +1,21 @@
+.videoLamborghini {
+  max-width: 910px;
+  height: 258px;
+  background: url("./videoLamborghini.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+@media screen and (max-width: 930px) {
+  .videoLamborghini{
+    background-size: contain;
+  }
+}

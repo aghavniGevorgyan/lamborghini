@@ -1,0 +1,55 @@
+.raceContainer{
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+.raceTitle{
+font-size: 32px;
+font-weight: 300;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.raceParaghraph {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: initial;
+
+}
+.raceParaghraph >p{
+    width: 49%;
+}
+.raceParaghraph :nth-child(1){
+    color: black;
+    font-weight: bold;
+}
+.racePhoto{
+    width: 100%;
+    height: 415px;
+    background-image: url('/src/components/images/racePhoto.jpg');
+}
+@media screen and (max-width: 930px) {
+    .raceParaghraph{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .raceContainer{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .raceParaghraph >p{
+        width: 100%;
+    }
+}

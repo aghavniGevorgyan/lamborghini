@@ -1,0 +1,29 @@
+.footerContainer {
+  max-width: 1600px;
+  height: 742px;
+  background: #363636;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.footPart {
+  max-width: 892px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: white;
+}
+
+@media screen and (max-width: 930px) {
+  .footerContainer{
+    height:900px ;
+  }
+ 
+}
+@media screen and (max-width: 390px) {
+  .footPart{
+    flex-direction: column;
+  }
+}
